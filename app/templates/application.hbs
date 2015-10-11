@@ -1,39 +1,38 @@
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {{#link-to 'application' class="navbar-brand"}}Thorson &amp; Rogers{{/link-to}}
+<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            {{#link-to 'application' class="navbar-brand"}}Thorson + Rogers{{/link-to}}
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li>{{#link-to 'about'}}About{{/link-to}}</li>
+              <li>{{#link-to 'party'}}Party{{/link-to}}</li>
+              <li>{{#link-to 'logistics'}}Logistics{{/link-to}}</li>
+              <li>{{#link-to 'registry'}}Registry{{/link-to}}</li>
+              <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+            </ul>
+        </div>
     </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li>{{#link-to 'about'}}About{{/link-to}}</li>
-        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-        <li>{{#link-to 'party'}}Party{{/link-to}}</li>
-        <li>{{#link-to 'logistics'}}Logistics{{/link-to}}</li>
-        <li>{{#link-to 'registry'}}Registry{{/link-to}}</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
 </nav>
 
 {{outlet}}
 
 <div class="site-wrapper">
-
   <div class="site-wrapper-inner">
-
     <div class="cover-container">
-<div class="mastfoot">
-  <div class="inner">
-    <p>Created with <a href="http://getbootstrap.com">Bootstrap</a> &amp; <a href="http://emberjs.com/">Ember.js</a>, by <a href="https://twitter.com/ROGEHAUS">@ROGEHAUS</a>.</p>
+      <div class="mastfoot">
+        <div class="inner">
+          <p>Created with <a href="http://getbootstrap.com">Bootstrap</a> and <a href="http://emberjs.com">Ember.js</a>, by <a href="https://twitter.com/ROGEHAUS">@ROGEHAUS</a>.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
 </div>
