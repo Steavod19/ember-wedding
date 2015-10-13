@@ -1,10 +1,42 @@
 
 
 <div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+      <ul class="nav nav-pills nav-justified" role="pilllist">
+        <li role="presentation"><a aria-controls="groom" data-toggle="pill">Groom</a></li>
+        <li role="presentation"><a aria-controls="bride" data-toggle="pill">Bride</a></li>
+      </ul>
+      <div class="pill-content">
+        <div role="pillpanel" class="pill-pane active" id="groom">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="presentation"><a >Steve</a></li>
+            <li role="presentation"><a >Adam</a></li>
+            <li role="presentation"><a >Jeff</a></li>
+            <li role="presentation"><a >Trent</a></li>
+            <li role="presentation"><a >Pete</a></li>
+            <li role="presentation"><a >Bill</a></li>
+            <li role="presentation"><a >Bud</a></li>
+          </ul>
+        </div>
+      </div>
+      <div role="pillpanel" class="pill-pane active" id="bride">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation"><a >Bonna</a></li>
+          <li role="presentation"><a >Joanna</a></li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="starter-template">
-    <h1>MEET OUR SQUAD</h1>
-    <p class="lead">Some cool people we know that you can stalk via the internet before you meet them in person.</p>
+    <div class="col-xs-8">
+
+        <div class="starter-template">
+          <h1>MEET OUR SQUAD</h1>
+          <p class="lead">Some cool people we know that you can stalk via the internet before you meet them in person.</p>
+        </div>
+
+    {{outlet}}
+    </div>
+
   </div>
-
-</div><!-- /.container -->
+</div>

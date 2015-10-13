@@ -4,7 +4,7 @@ font-family: 'Oswald', sans-serif;
 
 
 .starter-template {
-  padding: 40px 15px;
+  padding: 20px 15px;
   /*position: absolute;*/
   text-align: center;
 }
@@ -34,6 +34,8 @@ font-family: 'Oswald', sans-serif;
   min-width: 100%;
   min-height: 100%;
 }
+
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .cover-container {
@@ -84,18 +86,17 @@ font-family: 'Oswald', sans-serif;
   }
 }
 
-.navbar-inverse .navbar-brand {
+/*.navbar-inverse .navbar-brand {
   color: #FFFFFF;
   margin-right: 30px;
-  /*font-weight: 600;*/
   letter-spacing: 2px;
-}
+}*/
 
-.navbar-inverse .navbar-brand:hover {
+/*.navbar-inverse .navbar-brand:hover {
   color: #d3d3d3;
-}
+}*/
 
-.navbar-inverse {
+/*.navbar-inverse {
   border-width: 0px;
   background-color: rgba(0,0,0,0.6);
   background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 50.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 50% , rgba(0,0,0,0.00)));
@@ -104,4 +105,59 @@ font-family: 'Oswald', sans-serif;
   margin-bottom: 35px;
   border: none;
   padding: 10px;
+}*/
+
+.btn-group-vertical {
+  width: 100%;
 }
+
+.btn-group-vertical button {
+  height: 75px;
+}
+.btn-group-vertical button:hover {
+  background-color: #d3d3d3;
+}
+
+/*new side bar*/
+
+#sidebar {
+  background-color: rgba(0,0,0,0.6);
+    color: white;
+    height: 100%;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 70px;
+    z-index: 2;
+    margin-right: 100px;
+}
+#sidebar .link-text {
+    visibility: hidden;
+}
+#sidebar:hover .link-text {
+    visibility: visible;
+    text-align: center;
+    top: -5px;
+}
+#sidebar:hover {
+    width: 150px;
+}
+#sidebar a {
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#sidebar-nav {
+    text-align: left;
+    margin-top: 75px;
+}
+#sidebar-nav .glyphicon {
+    font-size: 30px;
+    padding-left: 5px;
+}
+#sidebar-nav .nav-title {
+  font-size: 50px !important;
+}
+
+/*sidebar*/
