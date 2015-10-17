@@ -1,56 +1,32 @@
 
-<!-- <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            {{#link-to 'application' class="navbar-brand"}}Thorson + Rogers{{/link-to}}
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li>{{#link-to 'about'}}About{{/link-to}}</li>
-              <li>{{#link-to 'party'}}Party{{/link-to}}</li>
-              <li>{{#link-to 'logistics'}}Logistics{{/link-to}}</li>
-              <li>{{#link-to 'registry'}}Registry{{/link-to}}</li>
-              <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-            </ul>
-        </div>
-    </div>
-</nav> -->
-
 <nav id="sidebar" role="navigation">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
-     <span class="icon-bar"></span>
-     <span class="icon-bar"></span>
-     <span class="icon-bar"></span>
-    </button>
-    <div id="sidebar-nav">
-      <ul class="nav nav-stacked">
-        <li class="nav-title">
-          {{#link-to 'application'}} K+S{{/link-to}}
-        </li>
-        <li>
-          {{#link-to 'about'}}<span class="glyphicon glyphicon-star"></span><span class="link-text"> About</span>{{/link-to}}
-        </li>
-        <li>
-          {{#link-to 'party'}}<span class="glyphicon glyphicon-star"></span><span class="link-text"> Party</span>{{/link-to}}
-        </li>
-        <li>
-          {{#link-to 'logistics'}}<span class="glyphicon glyphicon-star"></span><span class="link-text"> Logistics</span>{{/link-to}}
-        </li>
-        <li>
-          {{#link-to 'registry'}}<span class="glyphicon glyphicon-star"></span><span class="link-text"> Registry</span>{{/link-to}}
-        </li>
-        <li>
-          {{#link-to 'contact'}}<span class="glyphicon glyphicon-star"></span><span class="link-text"> Contact Us</span>{{/link-to}}
-        </li>
-      </ul>
-    </div>
-    <!-- Sidebar End -->
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+  </button>
+  <div id="sidebar-nav">
+    <ul class="nav nav-stacked">
+      <li>
+        {{#link-to 'application' class="nav-title"}} K+S{{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'about'}}{{fa-icon "heart-o" size="lg"}}{{/link-to}}<p class="link-text">About</p>
+      </li>
+      <li>
+        {{#link-to 'party'}}{{fa-icon "users" size="lg"}}{{/link-to}}<p class="link-text">Party</p>
+      </li>
+      <li>
+        {{#link-to 'logistics'}}{{fa-icon "map-signs" size="lg"}}{{/link-to}}<p class="link-text">Logistics</p>
+      </li>
+      <li>
+        {{#link-to 'registry'}}{{fa-icon "gift" size="lg"}}{{/link-to}}<p class="link-text">Registry</p>
+      </li>
+      <li>
+        {{#link-to 'contact'}}{{fa-icon "pencil" size="lg"}}{{/link-to}}<p class="link-text">Contact Us</p>
+      </li>
+    </ul>
+  </div>
 </nav>
 
 {{outlet}}

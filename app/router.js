@@ -8,9 +8,13 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('contact');
-  this.route('party');
+  this.route('party', function() {
+    this.route('groom', {});
+    this.route('bride', {});
+  });
   this.route('logistics');
   this.route('registry');
 });
+
 
 export default Router;

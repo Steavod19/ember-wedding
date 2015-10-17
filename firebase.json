@@ -1,13 +1,9 @@
 {
-  "firebase": "blazing-fire-7318",
+  "firebase": "wed-app",
   "public": "./dist",
   "ignore": [
     "firebase.json",
     "**/.*",
     "**/node_modules/**"
-  ],
-  "rewrites": [ {
-    "source": "**",
-    "destination": "/index.html"
-  } ]
+  ]
 }

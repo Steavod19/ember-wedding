@@ -2,30 +2,23 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-4">
+    <div class="col-xs-4 pill-spacing">
       <ul class="nav nav-pills nav-justified" role="pilllist">
-        <li role="presentation"><a aria-controls="groom" data-toggle="pill">Groom</a></li>
-        <li role="presentation"><a aria-controls="bride" data-toggle="pill">Bride</a></li>
+        <!-- <li><a href="" {{action 'groomCall'}}>Groom</a></li>
+        <li><a href="" {{action 'brideCall'}}>Bride</a></li> -->
+        <li>{{#link-to 'party.groom'}}Groom{{/link-to}}</li>
+        <li>{{#link-to 'party.bride'}}Bride{{/link-to}}</li>
       </ul>
-      <div class="pill-content">
-        <div role="pillpanel" class="pill-pane active" id="groom">
-          <ul class="nav nav-pills nav-stacked">
-            <li role="presentation"><a >Steve</a></li>
-            <li role="presentation"><a >Adam</a></li>
-            <li role="presentation"><a >Jeff</a></li>
-            <li role="presentation"><a >Trent</a></li>
-            <li role="presentation"><a >Pete</a></li>
-            <li role="presentation"><a >Bill</a></li>
-            <li role="presentation"><a >Bud</a></li>
-          </ul>
-        </div>
-      </div>
-      <div role="pillpanel" class="pill-pane active" id="bride">
-        <ul class="nav nav-pills nav-stacked">
-          <li role="presentation"><a >Bonna</a></li>
-          <li role="presentation"><a >Joanna</a></li>
-        </ul>
-      </div>
+      <!-- <ul class="nav nav-pills nav-stacked">
+        <li><a href="" {{action 'steveCall'}}>Steve</a></li>
+        <li><a href="" {{action 'jeffCall'}}>Jeff</a></li>
+        <li><a href="" {{action 'trentCall'}}>Trent</a></li>
+      </ul>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="" {{action 'bonnaCall'}}>Bonna</a></li>
+        <li><a href="" {{action 'joannaCall'}}>Joanna</a></li>
+      </ul> -->
+      {{outlet}}
     </div>
 
     <div class="col-xs-8">
@@ -34,8 +27,11 @@
           <h1>MEET OUR SQUAD</h1>
           <p class="lead">Some cool people we know that you can stalk via the internet before you meet them in person.</p>
         </div>
-
-    {{outlet}}
+        <!-- {{party-bio}} -->
+        <h1>{{name}}</h1>
+        <p>Lives in:{{location}}</p>
+        <p>From: {{from}}</p>
+        <p>How they know the {{affiliation}}: {{info}}</p>
     </div>
 
   </div>
