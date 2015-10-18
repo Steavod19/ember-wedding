@@ -173,7 +173,6 @@ body {
     position: relative;
     width: 100%;
     color: #fff;
-    vertical-align: middle;
     height: 400px;
     background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
   }
@@ -366,14 +365,33 @@ body {
 
 .party-title {
   text-align: center;
+  padding: 20px;
+  background-color: #57827F;
+  color: #FFF;
 }
 
 .party-title p{
   font-family: 'Josefin Slab', serif;
   font-size: 16px;
+  margin-bottom: 0px;
+  padding-top: 10px;
 }
 .party-title span{
-  font-size: 35px;
+  font-size: 40px;
+}
+.party-info p{
+  font-family: 'Josefin Slab', serif;
+}
+.bio-img {
+  background-color: #CCC;
+  width: 300px;
+  height: 333px;
+  vertical-align: middle;
+}
+.party-image-div {
+  /*margin: auto;
+  max-width: 200px;*/
+  margin-top: 30px;
 }
 
 .nav-pills li {
