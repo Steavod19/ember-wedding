@@ -23,7 +23,10 @@ body {
   width: 400px;
   margin-bottom: 0px;
   margin-top: 15px;
-  text-shadow: 2px 2px 2px #000;
+  border: 0;
+  height: 2px;
+  background: #000;
+  box-shadow: 0px -2px 0px #fff;
  }
 .index-title {
   margin-left: 60px;
@@ -35,13 +38,14 @@ body {
   transform: translate(-50%, -50%);
 }
 .index-title h1 {
-  font-size: 50px;
+  font-size: 80px;
   text-shadow: 2px 2px 2px #000;
   margin: 0px;
 }
 .index-title .size-large {
   font-size: 150px;
 }
+
 .cover-container {
   margin-right: 10px;
   margin-left: auto;
@@ -134,15 +138,15 @@ body {
   text-align: center;
 }
 #sidebar a:hover {
-  color: #79886A;
+  color: #57827F;
   background-color: transparent;
 }
 #sidebar a:active {
-  color: #79886A;
+  color: #57827F;
   background-color: transparent;
 }
 #sidebar a:focus {
-  color: #79886A;
+  color: #57827F;
   background-color: transparent;
 }
 #sidebar-nav {
@@ -166,41 +170,70 @@ body {
 /*sidebar*/
 
 /*logistics*/
-.logistics-title {
-    background-position: right;
+
+.logistics {
+    background-position: center;
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    width: 100%;
     color: #fff;
     height: 400px;
     background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
   }
-
   .logistics-box {
     width: 100%;
-    background-color: #5C5E24;
+    background-color: #4E1E36;
     position: absolute;
-    bottom: -22%;
-    margin-left: 20px;
+    bottom: -23%;
+    padding: 10px;
+    padding-top: 5px;
    }
-   .logistics-box p {
+   .logistics-text p {
     margin-bottom: 0px;
     font-size: 20px;
     color: #fff;
     font-family: 'Josefin Slab', serif;
     }
-    .logistics-box .col-xs-12 {
-      padding: 10px;
-      margin-left: 55px;
+   .logistics-text .camp {
+     font-size: 40px;
+     font-weight: 400;
+    }
+    .logistics-text {
+      margin-left: 90px;
      }
-     .logistics-box .camp {
-       font-size: 40px;
-       font-weight: 400;
-      }
 
 /*logistics*/
 /* about */
+
+.about {
+  height: 150px;
+}
+  .about-box {
+    width: 100%;
+    background-color: #7F6B98;
+    position: absolute;
+    padding: 10px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+   }
+
+    .about-text {
+      font-size: 30px;
+      font-weight: 400;
+      color: #FFF;
+      margin-left: 80px;
+      padding: 10px;
+     }
+
+     .about-text p {
+       font-family: 'Josefin Slab', serif;
+       font-size: 16px;
+      }
+
+
+      .about-text span{
+       font-size: 40px;
+      }
 #ks {
   height: 350px;
   width: auto;
@@ -210,27 +243,6 @@ body {
 }
 .about-cover-text {
   margin: 30px;
-}
-.about-title {
-  margin: auto;
-  margin-bottom: 30px;
-  margin-left: 70px;
-  background-color: #7F6B98;
-  width: 100%;
-
-}
-.about-description p{
- font-family: 'Josefin Slab', serif;
- font-size: 16px;
-}
-.about-description span{
- font-size: 40px;
-}
-.about-description {
- margin: 0 25px;
- padding: 20px 0;
- color: #FFF;
-
 }
 .about-row {
   border: 1px solid #CCC;
@@ -251,23 +263,49 @@ body {
   font-size: 16px;
 }
 
+/*.col-lg-4.col-md-5.col-xs-4.hidden-sm.hidden-xs {
+  top: -20px;
+}*/
+
 /* about */
 
 /*registry*/
 
-.registry-title {
-    background-position: right;
+
+.registry {
+    background-position: center;
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    width: 100%;
-    /*color: #fff;*/
-    vertical-align: middle;
+    color: #fff;
     height: 400px;
     background-image: url('https://s3.amazonaws.com/wedding-site-images/morrocan-plates.jpg');
   }
+  .registry-box {
+    width: 100%;
+    background-color: #79886A;
+    position: absolute;
+    padding: 10px;
+    padding-top: 5px;
+   }
+   .registry-text p {
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+    }
+   .registry-text .camp {
+     font-size: 40px;
+     font-weight: 400;
+    }
+    .registry-text {
+      font-size: 30px;
+      font-weight: 400;
+      color: #FFF;
+      margin-left: 80px;
+     }
 
-  .registry-title:before {
+  .registry:before {
   content: '';
   position: absolute;
   top: 0;
@@ -278,27 +316,11 @@ body {
   opacity: 1;
 }
 
-  .registry-box {
-    width: 100%;
-    background-color: #79886A;
-    position: absolute;
-    top: 0;
-   }
-    .registry-box p {
-    margin-left: 20px;
-    margin-bottom: 0px;
-    font-size: 20px;
-    color: #000;
-    }
-    .registry-box .col-xs-12 {
-    padding: 10px;
-    margin-left: 55px;
-    }
-    .registry-box .registry-lead {
-    font-size: 30px;
-    font-weight: 400;
-    color: #FFF;
-    }
+  .registry-box .registry-lead {
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFF;
+  }
 
 /*registry*/
 
@@ -384,7 +406,7 @@ body {
 }
 .bio-img {
   background-color: #CCC;
-  width: 300px;
+  width: 100%;
   height: 333px;
   vertical-align: middle;
 }
@@ -424,7 +446,7 @@ body {
 
 .party-pills ul li:nth-of-type(1) {
   margin-left: 0px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   border-top: solid 1px;
   border-color: #d3d3d3;
 }
@@ -441,5 +463,8 @@ body {
   padding-left: 30px;
   font-size: 20px;
 
+}
+ul.nav.nav-pills {
+  margin-bottom: 20px;
 }
 /*party*/

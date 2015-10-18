@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+
 weddingParty: true,
 name: null,
 location: null,
