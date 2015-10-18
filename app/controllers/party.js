@@ -13,13 +13,13 @@ twitter: null,
 actions: {
   groomCall: function() {
     this.set('weddingParty', true)
-    this.set('infoShow', true)
+    // this.set('infoShow', true)
   },
   brideCall: function() {
     this.set('weddingParty', false)
-    this.set('infoShow', true)
+    // this.set('infoShow', true)
   },
-  infoCall: function() {
+  steveCall: function() {
     this.setProperties({'name': "steve", 'location': "MA", 'from': 'MA',
     'affiliation': 'groom',
     'info': 'its steve'})

@@ -1,38 +1,39 @@
 
 
+<div class="party-page-container">
+
 <div class="container">
   <div class="row">
-    <div class="col-xs-4 pill-spacing">
-      <ul class="nav nav-pills nav-justified" role="pilllist">
-        <!-- <li><a href="" {{action 'groomCall'}}>Groom</a></li>
-        <li><a href="" {{action 'brideCall'}}>Bride</a></li> -->
-        <li>{{#link-to 'party.groom'}}Groom{{/link-to}}</li>
-        <li>{{#link-to 'party.bride'}}Bride{{/link-to}}</li>
-      </ul>
-      <!-- <ul class="nav nav-pills nav-stacked">
-        <li><a href="" {{action 'steveCall'}}>Steve</a></li>
-        <li><a href="" {{action 'jeffCall'}}>Jeff</a></li>
-        <li><a href="" {{action 'trentCall'}}>Trent</a></li>
-      </ul>
-      <ul class="nav nav-pills nav-stacked">
-        <li><a href="" {{action 'bonnaCall'}}>Bonna</a></li>
-        <li><a href="" {{action 'joannaCall'}}>Joanna</a></li>
-      </ul> -->
-      {{outlet}}
+    <div class="col-sm-4 col-xxs-12">
+      <div class="party-tabs">
+        <ul class="nav nav-pills">
+          {{#link-to 'party.groom' action='groomCall' tagName='li'}}Groom{{/link-to}}
+          {{#link-to 'party.bride' action='brideCall' tagName='li'}}Bride{{/link-to}}
+        </ul>
+      </div>
+      <div class="party-pills">
+
+        {{outlet}}
+
+      </div>
     </div>
 
-    <div class="col-xs-8">
-
-        <div class="starter-template">
-          <h1>MEET OUR SQUAD</h1>
+    <div class="col-sm-8 col-xxs-12">
+        <div class="party-title">
+          <span>MEET OUR SQUAD</span>
           <p class="lead">Some cool people we know that you can stalk via the internet before you meet them in person.</p>
         </div>
         <!-- {{party-bio}} -->
+      <!-- <div class="party-info">
         <h1>{{name}}</h1>
         <p>Lives in:{{location}}</p>
         <p>From: {{from}}</p>
         <p>How they know the {{affiliation}}: {{info}}</p>
+      </div> -->
+
+
     </div>
 
   </div>
+</div>
 </div>

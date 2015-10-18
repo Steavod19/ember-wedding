@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
+  font-size: 16px;
 }
+
+[data-ember-action] {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Amatic SC', cursive;
 }
@@ -20,7 +26,7 @@ body {
   text-shadow: 2px 2px 2px #000;
  }
 .index-title {
-  margin-left: 70px;
+  margin-left: 60px;
   color: #FFF;
   text-align: center;
   position: fixed;
@@ -46,7 +52,7 @@ body {
   color: #d3d3d3;
 }
 .inner a {
-  color: #FFFFFF;
+  color: #79886A;
 }
 .inner a:hover {
   text-decoration: none;
@@ -95,7 +101,7 @@ body {
 /*new side bar*/
 
 #sidebar {
-  background-color: #FFF;
+  background-color: #CCC;
   color: white;
   height: 100%;
   padding: 0;
@@ -115,31 +121,32 @@ body {
     visibility: visible;
     text-align: center;
 }
+
 #sidebar:hover {
     width: 75px;
     text-align: center;
 }
 #sidebar a {
-  color: #CCC;
+  color: #FFF;
   white-space: nowrap;
   overflow: hidden;
   padding-bottom: 0px;
   text-align: center;
 }
 #sidebar a:hover {
-  color: #79CDCD;
+  color: #79886A;
   background-color: transparent;
 }
 #sidebar a:active {
-  color: #79CDCD;
+  color: #79886A;
   background-color: transparent;
 }
 #sidebar a:focus {
-  color: #79CDCD;
+  color: #79886A;
   background-color: transparent;
 }
 #sidebar-nav {
-  color: #d3d3d3;
+  color: #FFF;
   text-align: left;
   margin-top: 25px;
 }
@@ -167,28 +174,29 @@ body {
     width: 100%;
     color: #fff;
     vertical-align: middle;
-    height: 500px;
+    height: 400px;
     background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
   }
 
   .logistics-box {
     width: 100%;
-    background-color: #CCCCCC;
+    background-color: #5C5E24;
     position: absolute;
-    bottom: 0;
+    bottom: -22%;
+    margin-left: 20px;
    }
    .logistics-box p {
-     margin-left: 20px;
-     margin-bottom: 0px;
-     font-size: 20px;
-     color: #000;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
     }
     .logistics-box .col-xs-12 {
       padding: 10px;
       margin-left: 55px;
      }
      .logistics-box .camp {
-       font-size: 30px;
+       font-size: 40px;
        font-weight: 400;
       }
 
@@ -206,9 +214,24 @@ body {
 }
 .about-title {
   margin: auto;
-  text-align: center;
-  margin: 30px 0;
+  margin-bottom: 30px;
   margin-left: 70px;
+  background-color: #7F6B98;
+  width: 100%;
+
+}
+.about-description p{
+ font-family: 'Josefin Slab', serif;
+ font-size: 16px;
+}
+.about-description span{
+ font-size: 40px;
+}
+.about-description {
+ margin: 0 25px;
+ padding: 20px 0;
+ color: #FFF;
+
 }
 .about-row {
   border: 1px solid #CCC;
@@ -223,3 +246,182 @@ body {
 .about-row .col-xs-8 {
   padding: 50px;
 }
+
+.about-cover-text {
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+}
+
+/* about */
+
+/*registry*/
+
+.registry-title {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    /*color: #fff;*/
+    vertical-align: middle;
+    height: 400px;
+    background-image: url('https://s3.amazonaws.com/wedding-site-images/morrocan-plates.jpg');
+  }
+
+  .registry-title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom,transparent,#FFF);
+  opacity: 1;
+}
+
+  .registry-box {
+    width: 100%;
+    background-color: #79886A;
+    position: absolute;
+    top: 0;
+   }
+    .registry-box p {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #000;
+    }
+    .registry-box .col-xs-12 {
+    padding: 10px;
+    margin-left: 55px;
+    }
+    .registry-box .registry-lead {
+    font-size: 30px;
+    font-weight: 400;
+    color: #FFF;
+    }
+
+/*registry*/
+
+/*contact*/
+
+.contact-title {
+  /*margin-left: 60px;*/
+  padding: 120px;
+  padding-bottom: 140px;
+  color: #FFF;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*background-color: hsl(2, 57%, 40%);
+  background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+  repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+  repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);*/
+}
+.contact-title span {
+  font-size: 70px;
+  /*text-shadow: 2px 2px 2px #000;*/
+  margin: 0px;
+  opacity: 1;
+}
+
+.contact-title .size-large {
+  font-size: 120px;
+  font-weight: 400;
+  opacity: 100%;
+}
+.contact-title hr {
+  width: 400px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-shadow: 2px 2px 2px #000;
+ }
+
+.contact-background{
+  padding: 2.25em 1.6875em;
+  background-image: -webkit-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  background-image: -moz-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  background-image: -o-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  background-image: repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
+  -webkit-background-size: 4px 4px;
+  -moz-background-size: 4px 4px;
+  background-size: 4px 4px;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+}
+/*contact*/
+
+/*paty*/
+.party-page-container {
+  padding-left: 70px;
+  padding-top: 50px;
+}
+
+.party-title {
+  text-align: center;
+}
+
+.party-title p{
+  font-family: 'Josefin Slab', serif;
+  font-size: 16px;
+}
+.party-title span{
+  font-size: 35px;
+}
+
+.nav-pills li {
+  background-color: #FFF;
+  border-radius: 3px;
+}
+
+.nav-pills li:hover {
+  background-color: #d3d3d3;
+}
+
+.party-tabs ul li{
+  width: 45%;
+  margin: 0px;
+  text-align: center;
+  border: solid 1px;
+  border-color: #d3d3d3;
+  font-size: 30px;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 15px;
+}
+.party-tabs ul li:nth-of-type(1) {
+  margin-right: 20px;
+}
+.party-tabs ul li:nth-of-type(2) {
+  float: right;
+}
+
+
+.party-pills ul li:nth-of-type(1) {
+  margin-left: 0px;
+  margin-top: 20px;
+  border-top: solid 1px;
+  border-color: #d3d3d3;
+}
+
+.party-pills ul li {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0px;
+  border: solid 1px;
+  border-top: 0px;
+  border-color: #d3d3d3;
+  height: 80px;
+  padding-top: 25px;
+  padding-left: 30px;
+  font-size: 20px;
+
+}
+/*party*/
