@@ -12,7 +12,12 @@ Router.map(function() {
     this.route('groom', {});
     this.route('bride', {});
   });
-  this.route('logistics');
+  this.route('logistics', function() {
+    this.route('accommodations', {});
+    this.route('travel', {});
+    this.route('activities', {});
+    this.route('intro', {});
+  });
   this.route('registry');
 });
 

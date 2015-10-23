@@ -1,23 +1,47 @@
 
   <div class="logistics" >
-    <div class="logistics-box">
       <div class="logistics-text">
-        <span class="camp">CAMP PAXSON</span>
-        <p>Seeley Lake, Montana</p>
+        <span class="camp">- Logistics -</span>
       </div>
-    </div>
   </div>
 
-  <div class="logistics-intro">
+
+
+<div class="logistics-sub-menu">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 logistics-col-centered" >
-          <p>
-            When your application starts, the router is responsible for displaying templates, loading data, and otherwise setting up application state. It does so by matching the current URL to the routes that you've defined.
-            When your application starts, the router is responsible for displaying templates, loading data, and otherwise setting up application state. It does so by matching the current URL to the routes that you've defined.
-            When your application starts, the router is responsible for displaying templates, loading data, and otherwise setting up application state. It does so by matching the current URL to the routes that you've defined.
-          </p>
-      </div>
+        <div class="col-sm-12 col-md-12 col-lg-12" >
+        <ul class="nav nav-pills nav-justified">
+          {{#link-to 'logistics.intro' tagName='li'}}Seeley Lake{{/link-to}}
+          {{#link-to 'logistics.accommodations' tagName='li'}}Accommodations{{/link-to}}
+          {{#link-to 'logistics.activities' tagName='li'}}Activities{{/link-to}}
+          {{#link-to 'logistics.travel' tagName='li'}}Travel{{/link-to}}
+        </ul>
+        </div>
     </div>
   </div>
-  </div>
+</div>
+
+{{outlet}}
+
+
+
+
+
+
+  <!-- <div class="logistics-intro">
+    <div class="container">
+      <div class="row logistics-row-centered">
+        <div class="col-sm-6 col-md-6 col-lg-5 logistics-col-centered" >
+          <img class="" src="https://s3.amazonaws.com/wedding-site-images/paxson-canoes.JPG" alt="seeleylake" width="400px">
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-5 logistics-col-centered" >
+          <h2>Camp Paxson</h2>
+          <h3>Seeley Lake, Montana</h3>
+
+          <p>Our wedding ceremony and reception will both be held at Camp Paxson
+            in Seeley Lake, MT. Seeley Lake is located 55 miles northeast of Missoula, MT.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->

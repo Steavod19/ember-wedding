@@ -8,18 +8,28 @@
   cursor: pointer;
 }
 
+li {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Amatic SC', cursive;
 }
 
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background-position: center;
-}
+.image-cover {
+  background: url('https://s3.amazonaws.com/wedding-site-images/seeley.jpg') no-repeat center center fixed;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    }
+
+
 .index-title hr {
   width: 400px;
   margin-bottom: 0px;
@@ -114,37 +124,123 @@ body {
     color: #fff;
     height: 400px;
     background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
-    margin-bottom: 200px;
+    /*margin-bottom: 92px;*/
+    vertical-align: bottom;
+    padding: 70px;
   }
-  .logistics-box {
-    width: 100%;
-    background-color: #4E1E36;
-    position: absolute;
-    bottom: -23%;
-    padding: 10px;
-    padding-top: 5px;
-   }
-   .logistics-text p {
-    margin-bottom: 0px;
-    font-size: 20px;
+
+   .logistics span {
     color: #fff;
-    font-family: 'Josefin Slab', serif;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*font-family: 'Josefin Slab', serif;*/
+    /*margin: 10px;*/
     }
    .logistics-text .camp {
-     font-size: 40px;
-     font-weight: 400;
+     font-size: 90px;
+     font-weight: 500;
+     text-shadow: 2px 2px 2px #000;
+
     }
     .logistics-text {
-      margin-left: 90px;
+      /*margin-left: 90px;*/
+      text-align: center;
+      /*display: inline-block;*/
+      vertical-align: bottom;
      }
 
-     .logistics-col-centered{
-    float: none;
-    margin: 0 auto;
-    }
-    .logistics .intro {
-      height: 200px
-    }
+  .log-background {
+    background-color: #3d3d3d
+  }
+
+.logistics-sub-menu {
+  background-color: #000;
+  /*width: 100%;*/
+
+}
+
+.logistics-sub-menu > .container > .row ul {
+  text-align: center;
+  background-color: #000;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+.logistics-sub-menu > .container > .row ul li {
+  background-color: #000;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px 10px;
+  border: 0px;
+  border-radius: 0px;
+  color: #fff;
+  width: 350px;
+  position: relative;
+}
+
+
+.logistics-sub-menu > .container > .row ul li.active:after {
+  content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+	border: 10px solid transparent;
+	border-top-color: #000;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+
+}
+
+.logistics-sub-menu > .container > .row ul li.active:hover:after {
+  content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+	border: 10px solid transparent;
+	border-top-color: #333;
+  top: 100%;
+  left: 50%;
+}
+
+
+.logistics-sub-menu > .container > .row ul li:hover {
+  border: 0px;
+  border-radius: 0px;
+  background: rgb(76,76,76);
+  background: rgb(63,63,63);
+  background: -moz-linear-gradient(top,  rgba(63,63,63,1) 0%, rgba(38,38,38,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,63,63,1)), color-stop(100%,rgba(38,38,38,1)));
+  background: -webkit-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
+  background: -o-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
+  background: linear-gradient(to bottom,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#262626',GradientType=0 );
+
+}
+
+.log-intro {
+  margin: 5px;
+  height: 100px;
+  text-align: left;
+  margin-left: 70px;
+}
+.log-intro p {
+  font-family: 'Josefin Slab', serif;
+}
+
+.accomodations {
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
+  vertical-align: bottom;
+  padding: 70px;
+}
+
+
 
 /*logistics*/
 /* about */
@@ -289,7 +385,6 @@ body {
 }
 .contact-title span {
   font-size: 70px;
-  /*text-shadow: 2px 2px 2px #000;*/
   margin: 0px;
   opacity: 1;
 }
