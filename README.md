@@ -1,7 +1,15 @@
 # Wed-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+ [SteveandKyrstin.com](https://steveandkyrstin.com/)
+
+Wedding app built with Bootstrap and Ember.js.
+Hosting on Firebase.com
+
+Outstanding features:
+  User OAuth
+  Wedding Party Bio
+  RSVP
+  User Profile Pages
 
 ## Prerequisites
 
