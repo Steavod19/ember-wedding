@@ -12,29 +12,15 @@ twitter: null,
 
 
 actions: {
-  groomCall: function() {
-    this.set('weddingParty', true)
-    // this.set('infoShow', true)
-  },
-  brideCall: function() {
-    this.set('weddingParty', false)
-    // this.set('infoShow', true)
-  },
-  steveCall: function() {
-    this.setProperties({'name': "steve", 'location': "MA", 'from': 'MA',
-    'affiliation': 'groom',
-    'info': 'its steve'})
-  },
-  jeffCall: function() {
-    this.setProperties({'name': "Jeff", 'location': "GA", 'from': 'NH',
-    'affiliation': 'groom',
-    'info': 'its Jeff'})
-  },
-  trentCall: function() {
-    this.setProperties({'name': "Trent", 'location': "MI", 'from': 'VT',
-    'affiliation': 'groom',
-    'info': 'its trent'})
-  }
+  // groomCall: function() {
+  //   this.set('weddingParty', true)
+  //   // this.set('infoShow', true)
+  // },
+  // brideCall: function() {
+  //   this.set('weddingParty', false)
+  //   // this.set('infoShow', true)
+  // },
+  
 
 },
 

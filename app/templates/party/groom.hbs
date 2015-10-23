@@ -1,10 +1,45 @@
-<ul class="nav nav-pills nav-stacked">
-  <li {{action 'steveCall'}}>Steve</li>
-  <li {{action 'adamCall'}}>Adam</li>
-  <li {{action 'peteCall'}}>Pete</li>
-  <li {{action 'jeffCall'}}>Jeff</li>
-  <li {{action 'trentCall'}}>Trent</li>
-</ul>
 
 
+<div class="col-sm-4 col-xxs-12">
+  <div class="party-tabs">
+    <ul class="nav nav-pills">
+      {{#link-to 'party.groom' action='groomCall' tagName='li'}}Groom{{/link-to}}
+      {{#link-to 'party.bride' action='brideCall' tagName='li'}}Bride{{/link-to}}
+    </ul>
+  </div>
+  <div class="party-pills">
+    <ul class="nav nav-pills nav-stacked">
+      <li {{action 'steveCall'}}>Steve</li>
+      <li {{action 'adamCall'}}>Adam</li>
+      <li {{action 'peteCall'}}>Pete</li>
+      <li {{action 'jeffCall'}}>Jeff</li>
+      <li {{action 'trentCall'}}>Trent</li>
+    </ul>
+  </div>
+</div>
+
+<div class="col-sm-8 col-xxs-12">
+    <div class="party-title">
+      <span>MEET OUR SQUAD</span>
+      <p class="lead">Some cool people we know that you can stalk via the internet before you meet them in person.</p>
+    </div>
+    <div class="row ">
+      <div class="party-image-div">
+        <div class="col-md-6 col-sm-8">
+          <div class="center-cropped"
+               style="background-image: url('{{img}}');">
+          </div>
+          <!-- <img class="bio-img" src="{{img}}" alt="profile image" width="100%"> -->
+        </div>
+        <div class="col-md-6 col-sm-4">
+        <div class="party-info">
+          <h1>Name: {{name}}</h1>
+          <p>Lives in: {{location}}</p>
+          <p>Originally From: {{from}}</p>
+          <p>How he knows the {{affiliation}}: {{info}}</p>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
 {{outlet}}

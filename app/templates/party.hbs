@@ -1,49 +1,9 @@
 
 
 <div class="party-page-container">
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4 col-xxs-12">
-      <div class="party-tabs">
-        <ul class="nav nav-pills">
-          {{#link-to 'party.groom' action='groomCall' tagName='li'}}Groom{{/link-to}}
-          {{#link-to 'party.bride' action='brideCall' tagName='li'}}Bride{{/link-to}}
-        </ul>
-      </div>
-      <div class="party-pills">
-
-        {{outlet}}
-
-      </div>
+  <div class="container">
+    <div class="row">
+      {{outlet}}
     </div>
-
-    <div class="col-sm-8 col-xxs-12">
-        <div class="party-title">
-          <span>MEET OUR SQUAD</span>
-          <p class="lead">Some cool people we know that you can stalk via the internet before you meet them in person.</p>
-        </div>
-        <div class="row ">
-          <div class="party-image-div">
-            <div class="col-md-6 col-sm-8">
-              <img class="bio-img" >
-            </div>
-            <div class="col-md-6 col-sm-4">
-              <!-- {{party-bio}} -->
-            <div class="party-info">
-              <h1>Name: {{name}}</h1>
-              <p>Lives in: {{location}}</p>
-              <p>Originally From: {{from}}</p>
-              <p>How they know the {{affiliation}}: {{info}}</p>
-            </div>
-            </div>
-          </div>
-        </div>
-
-
-
-    </div>
-
   </div>
-</div>
 </div>

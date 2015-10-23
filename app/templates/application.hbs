@@ -1,33 +1,33 @@
 
-<nav id="sidebar" role="navigation">
-  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
-   <span class="icon-bar"></span>
-   <span class="icon-bar"></span>
-   <span class="icon-bar"></span>
-  </button>
-  <div id="sidebar-nav">
-    <ul class="nav nav-stacked">
-      <li>
-        {{#link-to 'application' class="nav-title"}} K+S{{/link-to}}
-      </li>
-      <li>
-        {{#link-to 'about'}}{{fa-icon "heart-o" size="lg"}}{{/link-to}}{{#link-to 'about' tagName='p' class='link-text'}}About{{/link-to}}
-      </li>
-      <li>
-        {{#link-to 'party'}}{{fa-icon "users" size="lg"}}{{/link-to}}<p class="link-text">Party</p>
-      </li>
-      <li>
-        {{#link-to 'logistics'}}{{fa-icon "map-signs" size="lg"}}{{/link-to}}<p class="link-text">Logistics</p>
-      </li>
-      <li>
-        {{#link-to 'registry'}}{{fa-icon "gift" size="lg"}}{{/link-to}}<p class="link-text">Registry</p>
-      </li>
-      <li>
-        {{#link-to 'contact'}}{{fa-icon "pencil" size="lg"}}{{/link-to}}<p class="link-text">Contact Us</p>
-      </li>
-    </ul>
-  </div>
-</nav>
+
+
+      <div class="sidebar-nav">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="collapse navbar-collapse" id="main-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                {{#link-to 'application' }}{{material-design-icon name='home'}}{{/link-to}}
+              </li>
+              <li>
+                {{#link-to 'about'}}{{material-design-icon name='favorite'}}{{/link-to}}
+              </li>
+              <li>
+                {{#link-to 'party.groom'}}{{material-design-icon name='wc'}}{{/link-to}}
+              </li>
+              <li>
+                {{#link-to 'logistics'}}{{material-design-icon name='terrain'}}{{/link-to}}
+              </li>
+              <li>
+                {{#link-to 'registry'}}{{material-design-icon name='shopping-cart'}}{{/link-to}}
+              </li>
+              <li>
+                {{#link-to 'contact'}}{{material-design-icon name='email'}}{{/link-to}}
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
 
 {{outlet}}
 

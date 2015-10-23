@@ -1,4 +1,42 @@
-    <ul class="nav nav-pills nav-stacked">
-      <li {{action 'steveCall'}}>Joanna</li>
-      <li {{action 'bonnaCall'}}>Bonna</li>
-    </ul>
+
+    <div class="col-sm-4 col-xxs-12">
+      <div class="party-tabs">
+        <ul class="nav nav-pills">
+          {{#link-to 'party.groom' tagName='li'}}Groom{{/link-to}}
+          {{#link-to 'party.bride' tagName='li'}}Bride{{/link-to}}
+        </ul>
+      </div>
+      <div class="party-pills">
+        <ul class="nav nav-pills nav-stacked">
+          <li {{action 'bonnaCall'}}>Bonna</li>
+          <li {{action 'hawleyCall'}}>Hawley</li>
+          <li {{action 'joannaCall'}}>Joanna</li>
+          <li {{action 'kimCall'}}>Kim</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-8 col-xxs-12">
+        <div class="party-title">
+          <span>MEET OUR SQUAD</span>
+          <p class="lead">Some cool people we know that you can stalk via the internet before you meet them in person.</p>
+        </div>
+        <div class="row ">
+          <div class="party-image-div">
+            <div class="col-md-6 col-sm-8">
+              <div class="center-cropped"
+                   style="background-image: url('{{img}}');">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-4">
+            <div class="party-info">
+              <h1>Name: {{name}}</h1>
+              <p>Lives in: {{location}}</p>
+              <p>Originally From: {{from}}</p>
+              <p>How she knows the {{affiliation}}: {{info}}</p>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    {{outlet}}
