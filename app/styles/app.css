@@ -219,12 +219,12 @@ body {
 
 }
 
-.log-intro {
+/*.log-intro {
   margin: 5px;
   height: 100px;
   text-align: left;
   margin-left: 70px;
-}
+}*/
 .log-intro p {
   font-family: 'Josefin Slab', serif;
 }
@@ -234,56 +234,148 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
+  height: 900px;
+  background-image: url('https://s3.amazonaws.com/wedding-site-images/cabin.jpg');
   vertical-align: bottom;
+}
+.accomodations-box {
+  width: 100%;
+  background-color: #79886A;
+  position: absolute;
+  padding: 20px;
+  padding-top: 5px;
+ }
+ .accomodations-text p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 90px;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Josefin Slab', serif;
+
+  }
+  .accomodations-info p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 17px;
+    color: #000;
+    font-family: 'Josefin Slab', serif;
+   }
+   .accomodations-info h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 30px;
+    }
+
+   .accomodations-info li {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: #000;
+    font-family: 'Josefin Slab', serif;
+    }
+
+    .accomodations-info ul {
+      list-style-type: none;
+    }
+
+    .accomodations-info .container {
+      padding-left: 120px;
+      margin: 0px !important;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      background-color: #CCC;
+    }
+    .accomodations-info{
+      background-color: #CCC;
+      margin: 0px;
+    }
+    .accomodations-info .container .acc-links {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .accomodations-info .container .acc-lead {
+      text-align: right;
+    }
+    .activities{
+      background-color: #ccc;
+    }
+
+  .activities .container-fluid {
+    margin-left: 80px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .activities img {
+    padding: 20px
+  }
+
+
+  .activities ul {
+    list-style-type: none;
+  }
+
+  .activities p {
+    font-size: 17px;
+    font-family: 'Josefin Slab', serif;
+  }
+  .activities li {
+    font-size: 17px;
+    font-family: 'Josefin Slab', serif;
+    padding: 7px 0;
+  }
+
+  .activities h3{
+    font-size: 30px;
+    padding-top: 15px;
+  }
+.log-sub-intro {
+  background-position: right;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 50%;
+  background-image: url('https://s3.amazonaws.com/wedding-site-images/lake.jpg');
+  vertical-align: center;
   padding: 70px;
 }
 
+.log-intro-text{
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+}
 
 
 /*logistics*/
 /* about */
 
 .about {
-  height: 150px;
+  background-position: center;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-image: url('https://s3.amazonaws.com/wedding-site-images/engaged.jpg');
+  vertical-align: bottom;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
-  .about-box {
-    width: 100%;
-    background-color: #7F6B98;
-    position: absolute;
-    padding: 10px;
-    padding-top: 5px;
-    margin-bottom: 20px;
-   }
-
-    .about-text {
-      font-size: 30px;
-      font-weight: 400;
-      color: #FFF;
-      margin-left: 80px;
-      padding: 10px;
-     }
-
-     .about-text p {
-       font-family: 'Josefin Slab', serif;
-       font-size: 16px;
-      }
-
-
-      .about-text span{
-       font-size: 40px;
-      }
-#ks {
-  height: 350px;
-  width: auto;
-  border-right: 1px solid #CCC;
-  margin-right: 30px;
-  /*position: inherit;*/
+.about-box {
+  margin: 30px 90px;
+  /*position: relative;*/
 }
-.about-cover-text {
-  margin: 30px;
+.about-text p {
+  font-family: 'Josefin Slab', serif;
 }
+
 .about-row {
   border: 1px solid #CCC;
   height: 100%;
@@ -303,9 +395,44 @@ body {
   font-size: 16px;
 }
 
-/*.col-lg-4.col-md-5.col-xs-4.hidden-sm.hidden-xs {
-  top: -20px;
-}*/
+.about-button {
+  margin: 30px 120px;
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color:rgba(95, 160, 129, 0.5);
+  border: 0px;
+  border-radius: 0px;
+}
+.about-button .glyphicon {
+  padding-right: 10px;
+  font-size: 30px;
+}
+.about-button:focus {
+  background-color:#5fa081;
+}
+.about-button:hover {
+  animation-name: homeCycle;
+  animation-duration:1s;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+
+  -webkit-animation-name: homeCycle;
+  -webkit-animation-duration:1s;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-iteration-count:infinite; }
+
+  @keyframes homeCycle
+  {
+  0% { background-color:rgba(95, 160, 129, 0.5);}
+  100% {background-color:#5fa081;}
+  }
+
+  @-webkit-keyframes homeCycle
+  {
+  0% { background-color:rgba(95, 160, 129, 0.5);}
+  100% {background-color:#5fa081;}
+  }
+}
 
 /* about */
 
@@ -463,12 +590,17 @@ body {
 }
 
 .nav-pills li {
-  background-color: #FFF;
-  border-radius: 3px;
+  border-radius: 0px;
 }
 
 .nav-pills li:hover {
   background-color: #d3d3d3;
+}
+
+.nav-pills li.active {
+  background-color: #57827F;
+  color: #fff;
+  border-radius: 0px;
 }
 
 .party-tabs ul li{
@@ -482,13 +614,18 @@ body {
   cursor: pointer;
   padding: 15px;
 }
+
+.party-tabs ul li.active {
+  background-color: #57827F;
+  border: 0px;
+}
+
 .party-tabs ul li:nth-of-type(1) {
   margin-right: 20px;
 }
 .party-tabs ul li:nth-of-type(2) {
   float: right;
 }
-
 
 .party-pills ul li:nth-of-type(1) {
   margin-left: 0px;
@@ -508,8 +645,13 @@ body {
   padding-top: 25px;
   padding-left: 30px;
   font-size: 20px;
-
+  /*text-align: center;*/
 }
+.party-pills ul li:hover {
+  background-color: #57827F;
+  color: #fff;
+}
+
 ul.nav.nav-pills {
   margin-bottom: 20px;
 }
@@ -575,15 +717,7 @@ ul.nav.nav-pills {
   border: 0px solid;
 }
 
-.navbar li {
-  /*margin: 20px 0;
-  margin-left: 10px;
-  border-radius: 50%;
-  height: 65px;
-  width: 65px;
-  margin-top: 7px;
-  text-align: center;*/
-}
+
 .navbar-default .navbar-nav > li:hover {
   background-color: transparent;
 }
