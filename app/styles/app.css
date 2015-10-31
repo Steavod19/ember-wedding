@@ -740,10 +740,10 @@ ul.nav.nav-pills {
         float: none;
         display: block;
     }
-    .sidebar-nav .navbar li a {
+    /*.sidebar-nav .navbar li a {
         padding-top: 12px;
         padding-bottom: 12px;
-    }
+    }*/
 }
 
 @media (min-width: 992px) {
@@ -820,10 +820,11 @@ font-size: 30px;
 line-height: inherit;
 }
 
-/*.nav.navbar-nav span {
+.navbar-default .navbar-nav > li > a > p {
 visibility: hidden;
 }
-.nav.navbar-nav span:hover {
+.navbar-default .navbar-nav > li > a:hover > p {
 visibility: visible;
-padding-top: -5px;
-}*/
+margin-top: -10px;
+
+}
