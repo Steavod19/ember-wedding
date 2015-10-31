@@ -819,3 +819,11 @@ font-size: 30px;
 /*vertical-align: middle;*/
 line-height: inherit;
 }
+
+/*.nav.navbar-nav span {
+visibility: hidden;
+}
+.nav.navbar-nav span:hover {
+visibility: visible;
+padding-top: -5px;
+}*/
