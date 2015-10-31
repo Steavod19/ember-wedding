@@ -234,14 +234,13 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 600px;
   background-image: url('https://s3.amazonaws.com/wedding-site-images/cabin.jpg');
   vertical-align: bottom;
 }
 .accomodations-box {
   width: 100%;
   background-color: #79886A;
-  position: absolute;
   padding: 20px;
   padding-top: 5px;
  }
@@ -293,6 +292,9 @@ body {
       background-color: #CCC;
       margin: 0px;
     }
+    .accomodations-info li{
+      cursor: auto;
+    }
     .accomodations-info .container .acc-links {
       text-align: center;
       margin-bottom: 50px;
@@ -307,7 +309,7 @@ body {
   .activities .container-fluid {
     margin-left: 80px;
     margin-top: 0px;
-    margin-bottom: 50px;
+    padding: 35px 0;
   }
   .activities img {
     padding: 20px
@@ -348,8 +350,55 @@ body {
   padding: 20px;
   background-color: #fff;
   position: relative;
+  margin-top: 70px;
+}
+.log-intro-text h2 i.mdi-explore {
+  margin-right: 10px;
+  color: #696969;
+  font-size: 40px;
+  vertical-align: middle;
+}
+.log-intro-text p {
+  margin-left: 50px;
 }
 
+.accomodations-info h3 i {
+  margin-right: 10px;
+  color: #696969;
+  font-size: 40px;
+  vertical-align: middle;
+}
+.travel-info h3 i {
+  margin-right: 10px;
+  color: #696969;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.accomodations-info p {
+  margin-left: 50px;
+}
+.travel-info p {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.accomodations-info ul {
+  margin-left: 20px;
+}
+.activities-block {
+  margin-left: 10px;
+}
+
+.travel-block {
+  margin-left: 80px;
+}
+/*.travel-block .col-sm-6.col-md-6.col-lg-6 {
+  margin-top: 30px;
+}*/
+.travel-text p {
+  font-family: 'Josefin Slab', serif;
+  font-size: 15px;
+}
 
 /*logistics*/
 /* about */
@@ -432,12 +481,10 @@ body {
   0% { background-color:rgba(95, 160, 129, 0.5);}
   100% {background-color:#5fa081;}
   }
-}
 
 /* about */
 
 /*registry*/
-
 
 .registry {
     background-position: center;
@@ -447,7 +494,19 @@ body {
     color: #fff;
     height: 400px;
     background-image: url('https://s3.amazonaws.com/wedding-site-images/morrocan-plates.jpg');
+    /*padding: 70px;*/
   }
+    .registry:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,transparent,#FFF);
+    opacity: 1;
+  }
+
   .registry-box {
     width: 100%;
     background-color: #79886A;
@@ -473,16 +532,7 @@ body {
       margin-top: 20px;
      }
 
-  .registry:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom,transparent,#FFF);
-  opacity: 1;
-}
+
 
   .registry-box .registry-lead {
   font-size: 30px;
