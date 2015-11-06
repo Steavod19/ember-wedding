@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
   location: "Paraguay",
   from: 'Helena, MT',
   affiliation: 'Bride',
-  info: 'We met in high school youth group.',
+  info: 'While we initially met in high school youth group, our friendship was built on Morning Light coffee, eating ginger snacks, and singing along to HelloGoodbye while driving around Helena!',
   img: 'https://s3.amazonaws.com/wedding-site-images/bonnaprofile.png',
 
 
@@ -14,7 +14,7 @@ export default Ember.Controller.extend({
 
     bonnaCall: function() {
       this.setProperties({'name': "Bonna", 'location': "Paraguay", 'from': 'Helena, MT',
-      'affiliation': 'Bride', 'info': 'We met in high school youth group.', 'img': 'https://s3.amazonaws.com/wedding-site-images/bonnaprofile.png'});
+      'affiliation': 'Bride', 'info': 'While we initially met in high school youth group, our friendship was built on Morning Light coffee, eating ginger snacks, and singing along to HelloGoodbye while driving around Helena!', 'img': 'https://s3.amazonaws.com/wedding-site-images/bonnaprofile.png'});
     },
     joannaCall: function() {
       this.setProperties({'name': "JoAnna", 'location': "Helena, MT", 'from': 'Helena, MT',
