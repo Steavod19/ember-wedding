@@ -24,11 +24,11 @@ export default Ember.Controller.extend({
     hawleyCall: function() {
       this.setProperties({'name': "Hawley", 'location': "Worcester, MA", 'from': 'RENO!',
       'affiliation': 'Bride', 'img': 'https://s3.amazonaws.com/wedding-site-images/hawley.jpg',
-      'info': 'Kyrstin dressed Halwey in Cuba and an instant friendship was born.'});
+      'info': 'Kyrstin dressed Hawley in Cuba and an instant friendship was born.'});
     },
     kimCall: function() {
       this.setProperties({'name': "Kim", 'location': "Spokane, WA", 'from': 'Helena, MT',
-      'affiliation': 'groom', 'img': 'https://s3.amazonaws.com/wedding-site-images/Kimmie.jpg',
+      'affiliation': 'Bride', 'img': 'https://s3.amazonaws.com/wedding-site-images/Kimmie.jpg',
       'info': 'We met in middle school confirmation, when Kim threw a Bible at a mutual friend. Our friendship has been sustained over the years by dancing to “A Friend Like Me” from Aladdin.'});
     }
   }
