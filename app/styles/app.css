@@ -532,14 +532,55 @@ body {
       margin-top: 20px;
      }
 
-
-
   .registry-box .registry-lead {
   font-size: 30px;
   font-weight: 400;
   color: #FFF;
   margin-top: 20px;
   }
+
+  .registry-button {
+    position: relative;
+    font-size: 20px;
+    background-color:#194c65;
+    border: 0px;
+    border-radius: 0px;
+  }
+  .registry-button.btn{
+    left: 0;
+    margin: 0 40% 0 40%;
+    padding: 10px 100px;
+    position: absolute;
+  }
+  .registry-button .glyphicon {
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  .registry-button:focus {
+    background-color:#194c65;
+  }
+  .registry-button:hover {
+    animation-name: homeCycle;
+    animation-duration:1s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+
+    -webkit-animation-name: homeCycle;
+    -webkit-animation-duration:1s;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-iteration-count:infinite; }
+
+    @keyframes homeCycle
+    {
+    0% { background-color:rgba(51, 102, 153, 0.7);}
+    100% {background-color:#194c65;}
+    }
+
+    @-webkit-keyframes homeCycle
+    {
+    0% { background-color:rgba(51, 102, 153, 0.7);}
+    100% {background-color:#194c65;}
+    }
 
 /*registry*/
 
