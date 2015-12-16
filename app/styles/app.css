@@ -19,16 +19,15 @@ body {
 .image-cover {
   background: url('https://s3.amazonaws.com/wedding-site-images/seeley.jpg') no-repeat center center fixed;
   background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    }
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 
 .index-title hr {
   width: 400px;
@@ -38,9 +37,9 @@ body {
   height: 2px;
   background: #000;
   box-shadow: 0px -2px 0px #fff;
- }
+}
+
 .index-title {
-  /*margin-left: 60px;*/
   color: #FFF;
   text-align: center;
   position: fixed;
@@ -48,11 +47,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .index-title h1 {
   font-size: 80px;
   text-shadow: 2px 2px 2px #000;
   margin: 0px;
 }
+
 .index-title .size-large {
   font-size: 150px;
 }
@@ -61,22 +62,21 @@ body {
   margin-right: 10px;
   margin-left: auto;
 }
+
 .inner {
   padding-top: 30px;
   text-align: right;
   color: #d3d3d3;
 }
+
 .inner a {
   color: #79886A;
 }
+
 .inner a:hover {
   text-decoration: none;
   color: #d3d3d3;
 }
-
-/*
- * Affix and center
- */
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
@@ -109,6 +109,7 @@ body {
 .btn-group-vertical button {
   height: 75px;
 }
+
 .btn-group-vertical button:hover {
   background-color: #d3d3d3;
 }
@@ -117,47 +118,42 @@ body {
 /*logistics*/
 
 .logistics {
-    background-position: center;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    height: 400px;
-    background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
-    /*margin-bottom: 92px;*/
-    vertical-align: bottom;
-    padding: 70px;
-  }
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 400px;
+  background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
+  /*margin-bottom: 92px;*/
+  vertical-align: bottom;
+  padding: 70px;
+}
 
-   .logistics span {
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    /*font-family: 'Josefin Slab', serif;*/
-    /*margin: 10px;*/
-    }
-   .logistics-text .camp {
-     font-size: 90px;
-     font-weight: 500;
-     text-shadow: 2px 2px 2px #000;
+.logistics span {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
 
-    }
-    .logistics-text {
-      /*margin-left: 90px;*/
-      text-align: center;
-      /*display: inline-block;*/
-      vertical-align: bottom;
-     }
+.logistics-text .camp {
+  font-size: 90px;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px #000;
+}
 
-  .log-background {
-    background-color: #3d3d3d
-  }
+.logistics-text {
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.log-background {
+  background-color: #3d3d3d
+}
 
 .logistics-sub-menu {
   background-color: #000;
-  /*width: 100%;*/
-
 }
 
 .logistics-sub-menu > .container > .row ul {
@@ -166,6 +162,7 @@ body {
   margin-left: 30px;
   margin-bottom: 0px;
 }
+
 .logistics-sub-menu > .container > .row ul li {
   background-color: #000;
   font-size: 30px;
@@ -178,7 +175,6 @@ body {
   position: relative;
 }
 
-
 .logistics-sub-menu > .container > .row ul li.active:after {
   content: ' ';
 	height: 0;
@@ -189,7 +185,6 @@ body {
   top: 100%;
   left: 50%;
   z-index: 1;
-
 }
 
 .logistics-sub-menu > .container > .row ul li.active:hover:after {
@@ -216,15 +211,8 @@ body {
   background: -ms-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
   background: linear-gradient(to bottom,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#262626',GradientType=0 );
-
 }
 
-/*.log-intro {
-  margin: 5px;
-  height: 100px;
-  text-align: left;
-  margin-left: 70px;
-}*/
 .log-intro p {
   font-family: 'Josefin Slab', serif;
 }
@@ -238,12 +226,14 @@ body {
   background-image: url('https://s3.amazonaws.com/wedding-site-images/cabin.jpg');
   vertical-align: bottom;
 }
+
 .accomodations-box {
   width: 100%;
   background-color: #79886A;
   padding: 20px;
   padding-top: 5px;
- }
+}
+
  .accomodations-text p {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -252,88 +242,96 @@ body {
   font-size: 20px;
   color: #fff;
   font-family: 'Josefin Slab', serif;
+}
 
-  }
-  .accomodations-info p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    font-size: 17px;
-    color: #000;
-    font-family: 'Josefin Slab', serif;
-   }
-   .accomodations-info h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    font-size: 30px;
-    }
+.accomodations-info p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  font-size: 17px;
+  color: #000;
+  font-family: 'Josefin Slab', serif;
+}
 
-   .accomodations-info li {
-    padding-top: 10px;
-    padding-right: 10px;
-    font-size: 17px;
-    color: #000;
-    font-family: 'Josefin Slab', serif;
-    }
+.accomodations-info h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  font-size: 30px;
+}
 
-    .accomodations-info ul {
-      list-style-type: none;
-    }
+.accomodations-info li {
+  padding-top: 10px;
+  padding-right: 10px;
+  font-size: 17px;
+  color: #000;
+  font-family: 'Josefin Slab', serif;
+}
 
-    .accomodations-info .container {
-      padding-left: 120px;
-      margin: 0px !important;
-      padding-bottom: 30px;
-      padding-top: 30px;
-      background-color: #CCC;
-    }
-    .accomodations-info{
-      background-color: #CCC;
-      margin: 0px;
-    }
-    .accomodations-info li{
-      cursor: auto;
-    }
-    .accomodations-info .container .acc-links {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    .accomodations-info .container .acc-lead {
-      text-align: right;
-    }
-    .activities{
-      background-color: #ccc;
-    }
+.accomodations-info ul {
+  list-style-type: none;
+}
 
-  .activities .container-fluid {
-    margin-left: 80px;
-    margin-top: 0px;
-    padding: 35px 0;
-  }
-  .activities img {
-    padding: 20px
-  }
+.accomodations-info .container {
+  padding-left: 120px;
+  margin: 0px !important;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #CCC;
+}
 
+.accomodations-info{
+  background-color: #CCC;
+  margin: 0px;
+}
 
-  .activities ul {
-    list-style-type: none;
-  }
+.accomodations-info li{
+  cursor: auto;
+}
 
-  .activities p {
-    font-size: 17px;
-    font-family: 'Josefin Slab', serif;
-  }
-  .activities li {
-    font-size: 17px;
-    font-family: 'Josefin Slab', serif;
-    padding: 7px 0;
-  }
+.accomodations-info .container .acc-links {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-  .activities h3{
-    font-size: 30px;
-    padding-top: 15px;
-  }
+.accomodations-info .container .acc-lead {
+  text-align: right;
+}
+
+.activities{
+  background-color: #ccc;
+}
+
+.activities .container-fluid {
+  margin-left: 80px;
+  margin-top: 0px;
+  padding: 35px 0;
+}
+
+.activities img {
+  padding: 20px
+}
+
+.activities ul {
+  list-style-type: none;
+}
+
+.activities p {
+  font-size: 17px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.activities li {
+  font-size: 17px;
+  font-family: 'Josefin Slab', serif;
+  padding: 7px 0;
+}
+
+.activities h3{
+  font-size: 30px;
+  padding-top: 15px;
+}
+
 .log-sub-intro {
   background-position: right;
   position: absolute;
@@ -352,12 +350,14 @@ body {
   position: relative;
   margin-top: 70px;
 }
+
 .log-intro-text h2 i.mdi-explore {
   margin-right: 10px;
   color: #696969;
   font-size: 40px;
   vertical-align: middle;
 }
+
 .log-intro-text p {
   margin-left: 50px;
 }
@@ -368,6 +368,7 @@ body {
   font-size: 40px;
   vertical-align: middle;
 }
+
 .travel-info h3 i {
   margin-right: 10px;
   color: #696969;
@@ -378,13 +379,16 @@ body {
 .accomodations-info p {
   margin-left: 50px;
 }
+
 .travel-info p {
   margin-left: 30px;
   margin-right: 30px;
 }
+
 .accomodations-info ul {
   margin-left: 20px;
 }
+
 .activities-block {
   margin-left: 10px;
 }
@@ -392,16 +396,15 @@ body {
 .travel-block {
   margin-left: 80px;
 }
-/*.travel-block .col-sm-6.col-md-6.col-lg-6 {
-  margin-top: 30px;
-}*/
+
 .travel-text p {
   font-family: 'Josefin Slab', serif;
   font-size: 15px;
 }
 
-/*logistics*/
-/* about */
+/* ================== logistics ====================== */
+
+/* =================== about ======================== */
 
 .about {
   background-position: center;
@@ -417,10 +420,11 @@ body {
   min-width: 100%;
   min-height: 100%;
 }
+
 .about-box {
   margin: 30px 90px;
-  /*position: relative;*/
 }
+
 .about-text p {
   font-family: 'Josefin Slab', serif;
 }
@@ -432,6 +436,7 @@ body {
   margin-right: -20px;
   margin-top: 30px;
 }
+
 .about-row .col-xs-4 {
   padding: 0px;
 }
@@ -480,114 +485,171 @@ body {
   {
   0% { background-color:rgba(95, 160, 129, 0.5);}
   100% {background-color:#5fa081;}
-  }
+}
 
-/* about */
+/* ======================= about ====================== */
 
-/*registry*/
+/* ===================== registry ===================== */
 
 .registry {
-    background-position: center;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    height: 400px;
-    background-image: url('https://s3.amazonaws.com/wedding-site-images/morrocan-plates.jpg');
-    /*padding: 70px;*/
-  }
-    .registry:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom,transparent,#FFF);
-    opacity: 1;
-  }
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 400px;
+  background-image: url('https://s3.amazonaws.com/wedding-site-images/morrocan-plates.jpg');
+}
 
-  .registry-box {
-    width: 100%;
-    background-color: #79886A;
-    position: absolute;
-    padding: 10px;
-    padding-top: 5px;
-   }
-   .registry-text p {
-    margin-bottom: 0px;
-    font-size: 20px;
-    color: #fff;
-    font-family: 'Josefin Slab', serif;
-    }
-   .registry-text .camp {
-     font-size: 40px;
-     font-weight: 400;
-    }
-    .registry-text {
-      font-size: 40px;
-      font-weight: 400;
-      color: #FFF;
-      margin-left: 90px;
-      margin-top: 20px;
-     }
+.registry:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom,transparent,#FFF);
+  opacity: 1;
+}
 
-  .registry-box .registry-lead {
+.registry-box {
+  width: 100%;
+  background-color: #79886A;
+  position: absolute;
+  padding: 10px;
+  padding-top: 5px;
+}
+
+.registry-text p {
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Josefin Slab', serif;
+}
+
+.registry-text .camp {
+ font-size: 40px;
+ font-weight: 400;
+}
+
+.registry-text {
+  font-size: 40px;
+  font-weight: 400;
+  color: #FFF;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+.registry-box .registry-lead {
   font-size: 30px;
   font-weight: 400;
   color: #FFF;
   margin-top: 20px;
+}
+
+.registry-button {
+  position: relative;
+  font-size: 20px;
+  background-color:#194c65;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.registry-button.btn{
+  left: 0;
+  margin: 0 40% 0 40%;
+  padding: 10px 100px;
+  position: absolute;
+}
+
+.registry-button .glyphicon {
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.registry-button:focus {
+  background-color:#194c65;
+}
+
+.registry-button:hover {
+  animation-name: homeCycle;
+  animation-duration:1s;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+
+  -webkit-animation-name: homeCycle;
+  -webkit-animation-duration:1s;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-iteration-count:infinite;
+}
+
+  @keyframes homeCycle
+  {
+  0% { background-color:rgba(51, 102, 153, 0.7);}
+  100% {background-color:#194c65;}
   }
 
-  .registry-button {
-    position: relative;
-    font-size: 20px;
-    background-color:#194c65;
-    border: 0px;
-    border-radius: 0px;
+  @-webkit-keyframes homeCycle
+  {
+  0% { background-color:rgba(51, 102, 153, 0.7);}
+  100% {background-color:#194c65;}
+}
+
+/* =============== registry ================= */
+
+/* ============== contact ========================*/
+
+
+.contact-button {
+  position: absolute;
+  font-size: 30px;
+  background-color:#194c65;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.contact-button.btn{
+  left: 0;
+  /*margin: 0 20% 0 20%;*/
+  padding: 10px 100px;
+  position: relative;
+}
+
+.contact-button .glyphicon {
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.contact-button:focus {
+  background-color:#194c65;
+}
+
+.contact-button:hover {
+  animation-name: homeCycle;
+  animation-duration:1s;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+
+  -webkit-animation-name: homeCycle;
+  -webkit-animation-duration:1s;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-iteration-count:infinite;
+}
+
+  @keyframes homeCycle
+  {
+  0% { background-color:rgba(51, 102, 153, 0.7);}
+  100% {background-color:#194c65;}
   }
-  .registry-button.btn{
-    left: 0;
-    margin: 0 40% 0 40%;
-    padding: 10px 100px;
-    position: absolute;
-  }
-  .registry-button .glyphicon {
-    padding-right: 10px;
-    font-size: 30px;
-  }
-  .registry-button:focus {
-    background-color:#194c65;
-  }
-  .registry-button:hover {
-    animation-name: homeCycle;
-    animation-duration:1s;
-    animation-direction:alternate;
-    animation-iteration-count:infinite;
 
-    -webkit-animation-name: homeCycle;
-    -webkit-animation-duration:1s;
-    -webkit-animation-direction:alternate;
-    -webkit-animation-iteration-count:infinite; }
+  @-webkit-keyframes homeCycle
+  {
+  0% { background-color:rgba(51, 102, 153, 0.7);}
+  100% {background-color:#194c65;}
+}
 
-    @keyframes homeCycle
-    {
-    0% { background-color:rgba(51, 102, 153, 0.7);}
-    100% {background-color:#194c65;}
-    }
-
-    @-webkit-keyframes homeCycle
-    {
-    0% { background-color:rgba(51, 102, 153, 0.7);}
-    100% {background-color:#194c65;}
-    }
-
-/*registry*/
-
-/*contact*/
 
 .contact-title {
-  /*margin-left: 60px;*/
   padding: 120px;
   padding-bottom: 140px;
   color: #FFF;
@@ -601,6 +663,7 @@ body {
   repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
   repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);*/
 }
+
 .contact-title span {
   font-size: 70px;
   margin: 0px;
@@ -612,12 +675,13 @@ body {
   font-weight: 400;
   opacity: 100%;
 }
+
 .contact-title hr {
   width: 400px;
   margin-bottom: 0px;
   margin-top: 0px;
   text-shadow: 2px 2px 2px #000;
- }
+}
 
 .contact-background{
   padding: 2.25em 1.6875em;
@@ -636,9 +700,11 @@ body {
   min-height: 100%;
   background-position: center;
 }
-/*contact*/
 
-/*paty*/
+/* ===================== contact ===================== */
+
+/* ====================== paty =========================*/
+
 .party-page-container {
   padding-left: 70px;
   padding-top: 50px;
@@ -657,18 +723,22 @@ body {
   margin-bottom: 0px;
   padding-top: 10px;
 }
+
 .party-title span{
   font-size: 40px;
 }
+
 .party-info p{
   font-family: 'Josefin Slab', serif;
 }
+
 .bio-img {
   background-color: #CCC;
   width: 100%;
   height: 333px;
   vertical-align: middle;
 }
+
 .center-cropped {
   width: 100%;
   height: 333px;
@@ -676,6 +746,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .party-image-div {
   margin-top: 30px;
 }
@@ -714,13 +785,13 @@ body {
 .party-tabs ul li:nth-of-type(1) {
   margin-right: 20px;
 }
+
 .party-tabs ul li:nth-of-type(2) {
   float: right;
 }
 
 .party-pills ul li:nth-of-type(1) {
   margin-left: 0px;
-  /*margin-top: 20px;*/
   border-top: solid 1px;
   border-color: #d3d3d3;
 }
@@ -736,8 +807,8 @@ body {
   padding-top: 25px;
   padding-left: 30px;
   font-size: 20px;
-  /*text-align: center;*/
 }
+
 .party-pills ul li:hover {
   background-color: #57827F;
   color: #fff;
@@ -750,110 +821,110 @@ ul.nav.nav-pills {
 /*+++======+++*/
 
 .nav-container {
-    min-height: 50px;
+  min-height: 50px;
 }
 .sidebar-nav {
-    position: fixed;
-    left: 15px;
-    right: 15px;
-    z-index: 10;
+  position: fixed;
+  left: 15px;
+  right: 15px;
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
-    .sidebar-nav {
-        position: fixed;
-        left: initial;
-        right: initial;
-        margin-top: 40px;
-        width: 220px;
-    }
-    .sidebar-nav .navbar .navbar-collapse {
-        padding: 0;
-        max-height: none;
-    }
-    .sidebar-nav .navbar ul {
-        float: none;
-    }
-    .sidebar-nav .navbar ul:not {
-        display: block;
-    }
-    .sidebar-nav .navbar li {
-        float: none;
-        display: block;
-    }
-    /*.sidebar-nav .navbar li a {
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }*/
+  .sidebar-nav {
+      position: fixed;
+      left: initial;
+      right: initial;
+      margin-top: 40px;
+      width: 220px;
+  }
+  .sidebar-nav .navbar .navbar-collapse {
+      padding: 0;
+      max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+      float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+      display: block;
+  }
+  .sidebar-nav .navbar li {
+      float: none;
+      display: block;
+  }
+  /*.sidebar-nav .navbar li a {
+      padding-top: 12px;
+      padding-bottom: 12px;
+  }*/
 }
 
 @media (min-width: 992px) {
-    .sidebar-nav {
-        width: 80px;
-    }
+  .sidebar-nav {
+      width: 80px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .sidebar-nav {
-        width: 80px;
-    }
+  .sidebar-nav {
+      width: 80px;
+  }
 }
 .navbar {
-  margin-top: -30px;
-  width: 70px;
-  height: 100%;
-  text-align: center;
-  background-color: transparent;
-  border-radius: 2px;
-  border: 0px solid;
+margin-top: -30px;
+width: 70px;
+height: 100%;
+text-align: center;
+background-color: transparent;
+border-radius: 2px;
+border: 0px solid;
 }
 
 
 .navbar-default .navbar-nav > li:hover {
-  background-color: transparent;
+background-color: transparent;
 }
 .navbar-default .navbar-nav > li:active {
-  background-color: transparent;
+background-color: transparent;
 }
 .navbar-default .navbar-nav > li:focus {
-  background-color: transparent;
+background-color: transparent;
 }
 .navbar-default .navbar-nav > li {
-  background-color: transparent;
-  margin-left: 10px;
-  margin-top: 15px;
+background-color: transparent;
+margin-left: 10px;
+margin-top: 15px;
 }
 .navbar-default .navbar-nav > li:first-child {
-  margin-top: 30px;
-  margin-bottom: 40px;
+margin-top: 30px;
+margin-bottom: 40px;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
-  background-color: #194c65;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  line-height: inherit;
+color: #fff;
+background-color: #194c65;
+border-radius: 50%;
+height: 70px;
+width: 70px;
+line-height: inherit;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #FFF;
-  background-color: #cb6432;
-  border-radius: 50%;
+color: #FFF;
+background-color: #cb6432;
+border-radius: 50%;
 }
 .navbar-default .navbar-nav > li > a:active {
-  color: #194c65;
-  background-color: #cb6432;
-  border-radius: 50%;
+color: #194c65;
+background-color: #cb6432;
+border-radius: 50%;
 }
 .navbar-default .navbar-nav > li > a:focus {
-  color: #FFF;
-  background-color: #cb6432;
-  border-radius: 50%;
+color: #FFF;
+background-color: #cb6432;
+border-radius: 50%;
 }
 .registry-lead {
-  font-size: 40px;
-  text-align: center;
+font-size: 40px;
+text-align: center;
 }
 .navbar-default .navbar-nav > li > a > i {
 font-size: 30px;
