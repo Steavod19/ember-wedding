@@ -150,24 +150,24 @@ body {
 }
 
 .logistics-sub-menu {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .logistics-sub-menu > .container > .row ul {
   text-align: center;
-  background-color: #000;
+  background-color: #fff;
   margin-left: 30px;
   margin-bottom: 0px;
 }
 
 .logistics-sub-menu > .container > .row ul li {
-  background-color: #000;
+  background-color: #fff;
   font-size: 30px;
   text-align: center;
-  padding: 30px 10px;
+  padding: 15px 10px;
   border: 0px;
   border-radius: 0px;
-  color: #fff;
+  color: #e0e0e0;
   width: 350px;
   position: relative;
 }
@@ -178,36 +178,32 @@ body {
 	position: absolute;
 	width: 0;
 	border: 10px solid transparent;
-	border-top-color: #000;
+	border-top-color: #fff;
   top: 100%;
   left: 50%;
   z-index: 1;
+  color: #e0e0e0;
 }
 
-.logistics-sub-menu > .container > .row ul li.active:hover:after {
+/*.logistics-sub-menu > .container > .row ul li.active:hover:after {
   content: ' ';
 	height: 0;
 	position: absolute;
 	width: 0;
 	border: 10px solid transparent;
-	border-top-color: #333;
+	border-top-color: #7E7E7E;
   top: 100%;
   left: 50%;
-}
+}*/
 
 
 .logistics-sub-menu > .container > .row ul li:hover {
   border: 0px;
   border-radius: 0px;
-  background: rgb(76,76,76);
-  background: rgb(63,63,63);
-  background: -moz-linear-gradient(top,  rgba(63,63,63,1) 0%, rgba(38,38,38,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,63,63,1)), color-stop(100%,rgba(38,38,38,1)));
-  background: -webkit-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
-  background: -o-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
-  background: linear-gradient(to bottom,  rgba(63,63,63,1) 0%,rgba(38,38,38,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#262626',GradientType=0 );
+  color: #7e7e7e;
+}
+.logistics-sub-menu > .container > .row ul li.active {
+  color: #7e7e7e;
 }
 
 .log-intro p {
@@ -296,11 +292,13 @@ body {
 }
 
 .activities{
-  background-color: #ccc;
+  background-color: #8281a1;
+  color: #fff;
+  padding-left: 80px;
 }
 
 .activities .container-fluid {
-  margin-left: 80px;
+  padding-left: 80px;
   margin-top: 0px;
   padding: 35px 0;
 }
@@ -311,26 +309,33 @@ body {
 
 .activities ul {
   list-style-type: none;
+  color: #fff;
+
 }
 
 .activities p {
   font-size: 17px;
   font-family: 'Josefin Slab', serif;
+  color: #fff;
 }
 
 .activities li {
   font-size: 17px;
   font-family: 'Josefin Slab', serif;
   padding: 7px 0;
+  color: #fff;
+
 }
 
 .activities h3{
   font-size: 30px;
   padding-top: 15px;
+  color: #fff;
+
 }
 
 .log-sub-intro {
-  background-position: right;
+  /*background-position: right;
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,19 +343,25 @@ body {
   width: 50%;
   background-image: url('https://s3.amazonaws.com/wedding-site-images/lake.jpg');
   vertical-align: center;
-  padding: 70px;
+  padding: 70px;*/
+  /*margin-right: 90px;*/
+  /*background-color: #34657f;*/
 }
 
 .log-intro-text{
   padding: 20px;
-  background-color: #fff;
-  position: relative;
-  margin-top: 70px;
+  background-color: #34657f;
+  width: 100%;
+  height: auto;
+  /*position: relative;*/
+  color: #fff;
+  padding-left: 90px;
+
 }
 
 .log-intro-text h2 i.mdi-explore {
   margin-right: 10px;
-  color: #696969;
+  /*color: #696969;*/
   font-size: 40px;
   vertical-align: middle;
 }
@@ -361,16 +372,20 @@ body {
 
 .accomodations-info h3 i {
   margin-right: 10px;
-  color: #696969;
+  color: #fff;
   font-size: 40px;
   vertical-align: middle;
 }
 
 .travel-info h3 i {
   margin-right: 10px;
-  color: #696969;
+  color: #FFF;
   font-size: 40px;
   vertical-align: middle;
+}
+.travel .container-fluid {
+  background-color: #368E96;
+  color: #fff;
 }
 
 .accomodations-info p {
@@ -391,7 +406,9 @@ body {
 }
 
 .travel-block {
-  margin-left: 80px;
+  padding: 30px 20px;
+  padding-left: 80px;
+
 }
 
 .travel-text p {
@@ -903,7 +920,7 @@ ul.nav.nav-pills {
 .navbar-default .navbar-nav > li {
   background-color: transparent;
   /*margin-left: 10px;*/
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 .navbar-default .navbar-nav > li:first-child {
   /*margin-top: 30px;*/
