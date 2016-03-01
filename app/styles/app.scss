@@ -845,7 +845,7 @@ ul.nav.nav-pills {
 }
 
 
-@media (min-width: 100px) {
+/*@media (max-width: 767) {
   .sidebar-nav {
       position: fixed;
       left: initial;
@@ -868,7 +868,7 @@ ul.nav.nav-pills {
       float: none;
       display: block;
   }
-}
+}*/
 
 
 @media (min-width: 768px) {
