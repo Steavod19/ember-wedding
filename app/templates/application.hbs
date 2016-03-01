@@ -1,6 +1,6 @@
 
 
-
+    <div class="app-nav">
       <div class="sidebar-nav">
         <nav class="navbar navbar-default" role="navigation">
           <div class="collapse navbar-collapse" id="main-navbar-collapse">
@@ -27,7 +27,47 @@
           </div>
         </nav>
       </div>
+    </div>
 
+<div class="resp-nav">
+  <nav class="navbar navbar-default" >
+    <div class="container-fluid">
+      <div class="navbar-header" {{action "smNavClick"}}>
+        <!-- <div class="navbar-brand">K+S</div> -->
+        <div class="button-section">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+      {{#if isSmNav}}
+      <ul class="nav navbar-nav">
+        <li>
+          {{#link-to 'application' }}<p class="">Home</p>{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'about'}}<p class="">About</p>{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'party.groom'}}<p class="">Party</p>{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'logistics.intro'}}<p class="">Logistics</p>{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'registry'}}<p class="">Registry</p>{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'contact'}}<p class="">RSVP</p>{{/link-to}}
+        </li>
+      </ul>
+      {{/if}}
+    </div>
+  </nav>
+</div>
 
 
 
