@@ -6,7 +6,5 @@ export default Ember.Controller.extend({
     smNavClick: function() {
       console.log(this.toggleProperty('isSmNav'));
     },
-
-
   },
 });
