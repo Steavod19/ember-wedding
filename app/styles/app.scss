@@ -434,9 +434,21 @@ body {
   min-width: 100%;
   min-height: 100%;
 }
+.about-small {
+  background-position: center;
+  vertical-align: bottom;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 
 .about-box {
   margin: 30px 90px;
+}
+.about-small-box {
+  margin: 60px 30px;
 }
 
 .about-text p {
@@ -721,7 +733,37 @@ body {
 
 .party-page-container {
   padding-left: 70px;
-  padding-top: 50px;
+  padding-top: 15px;
+  @media (max-width: 991px) {
+    .party-title {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding-left: 0px;
+    .party-title {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .party-tabs ul li {
+      padding: 3px;
+      font-size: 20px;
+    }
+    .party-pills ul li {
+      margin-top: 0;
+      margin-bottom: 0;
+      border-radius: 0px;
+      border: solid 1px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      border-color: #d3d3d3;
+      padding: 15px 30px;
+      font-size: 20px;
+      width: 50%;
+      float: left;
+    }
+  }
 }
 
 .party-title {
@@ -729,6 +771,7 @@ body {
   padding: 20px;
   background-color: #57827F;
   color: #FFF;
+  margin-bottom: 15px;
 }
 
 .party-title p{
@@ -762,7 +805,7 @@ body {
 }
 
 .party-image-div {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .nav-pills li {
@@ -817,9 +860,7 @@ body {
   border: solid 1px;
   border-top: 0px;
   border-color: #d3d3d3;
-  height: 80px;
-  padding-top: 25px;
-  padding-left: 30px;
+  padding: 25px 30px;
   font-size: 20px;
 }
 
@@ -960,8 +1001,12 @@ ul.nav.nav-pills {
 .resp-nav {
   padding-bottom: 30px;
   position: absolute;
+  width: 100%;
   nav {
     z-index: 1;
+    button {
+      float: left;
+    }
   }
 
   .navbar-header {

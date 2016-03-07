@@ -2,12 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-  // name: 'Steve',
-  // location: "MA",
-  // from: 'Weymouth, MA',
-  // affiliation: 'Groom',
-  // img: 'https://s3.amazonaws.com/wedding-site-images/stevemac.png',
-  // info: 'Steve Mac and I grew up across the street from each other in Weymouth. We met in kindergarden and also went to CSC together. He also broke my nose once.',
+  name: 'Bud',
+  location: "FL",
+  from: 'Weymouth, MA',
+  affiliation: 'Groom',
+  img: 'https://s3.amazonaws.com/wedding-site-images/bnb.jpg',
+  info: 'My quirky oldest brother',
 
 
   actions: {

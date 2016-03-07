@@ -44,23 +44,23 @@
       </div>
       {{#if isSmNav}}
       <ul class="nav navbar-nav">
-        <li>
-          {{#link-to 'application' }}<p class="">Home</p>{{/link-to}}
+        <li {{action "smNavClick"}}>
+          {{#link-to 'application' }}<p>Home</p>{{/link-to}}
         </li>
-        <li>
-          {{#link-to 'about'}}<p class="">About</p>{{/link-to}}
+        <li {{action "smNavClick"}}>
+          {{#link-to 'about'}}<p>About</p>{{/link-to}}
         </li>
-        <li>
-          {{#link-to 'party.groom'}}<p class="">Party</p>{{/link-to}}
+        <li {{action "smNavClick"}}>
+          {{#link-to 'party.groom'}}<p>Party</p>{{/link-to}}
         </li>
-        <li>
-          {{#link-to 'logistics.intro'}}<p class="">Logistics</p>{{/link-to}}
+        <li {{action "smNavClick"}}>
+          {{#link-to 'logistics.intro'}}<p>Logistics</p>{{/link-to}}
         </li>
-        <li>
-          {{#link-to 'registry'}}<p class="">Registry</p>{{/link-to}}
+        <li {{action "smNavClick"}}>
+          {{#link-to 'registry'}}<p>Registry</p>{{/link-to}}
         </li>
-        <li>
-          {{#link-to 'contact'}}<p class="">RSVP</p>{{/link-to}}
+        <li {{action "smNavClick"}}>
+          {{#link-to 'contact'}}<p>RSVP</p>{{/link-to}}
         </li>
       </ul>
       {{/if}}
