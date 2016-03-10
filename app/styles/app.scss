@@ -1,7 +1,7 @@
 
 * {
   box-sizing: border-box;
-  font-size: 16px;
+  // font-size: 16px;
 }
 
 [data-ember-action] {
@@ -14,6 +14,7 @@ li {
 
 body {
   font-family: 'Amatic SC', cursive;
+  font-size: 16px;
 }
 
 .image-cover {
@@ -114,6 +115,22 @@ body {
 
 /*logistics*/
 
+@media (max-width: 991px) {
+
+}
+.logistics-sub-menu {
+  @media (max-width: 767px) {
+    .container > .row .nav.nav-pills.nav-justified {
+      margin-left: 0px;
+      li {
+        margin: 0px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
 .logistics {
   background-position: center;
   position: relative;
@@ -122,7 +139,6 @@ body {
   color: #fff;
   height: 400px;
   background-image: url('https://s3.amazonaws.com/wedding-site-images/paxson-lodge.JPG');
-  /*margin-bottom: 92px;*/
   vertical-align: bottom;
   padding: 70px;
 }
@@ -416,6 +432,53 @@ body {
   font-size: 15px;
 }
 
+
+
+@media (max-width: 767px) {
+  .log-intro-text {
+    padding: 20px 20px;
+  }
+  .accomodations-box, {
+    padding: 0px;
+    p {
+      margin-left: 0px
+    }
+  }
+  .accomodations-text, .accomodations-info .container {
+    padding: 20px 20px;
+  }
+  .accomodations {
+    // visibility: hidden;
+    display: none;
+  }
+  .acc-links > ul {
+    padding: 10px;
+    margin: 0px;
+  }
+  .activities {
+    padding: 0px;
+    .container-fluid {
+      padding: 10px;
+    }
+    .activities-block.accomodations-info {
+      margin: 0px;
+      p {
+        margin: 10px;
+        padding-bottom: 20px;
+      }
+      ul {
+        padding-left: 10px;
+      }
+    }
+  }
+  .travel-block.travel-info {
+    padding: 10px 5px;
+    p {
+      padding: 10px 0px;
+    }
+  }
+}
+
 /* ================== logistics ====================== */
 
 /* =================== about ======================== */
@@ -442,6 +505,9 @@ body {
   left: 0;
   min-width: 100%;
   min-height: 100%;
+  .about-text {
+    margin-top: 100px;
+  }
 }
 
 .about-box {
@@ -637,8 +703,9 @@ body {
 .contact-button.btn{
   left: 0;
   /*margin: 0 20% 0 20%;*/
-  padding: 10px 100px;
+  padding: 10px 50px;
   position: relative;
+  border-radius: 4px;
 }
 
 .contact-button .glyphicon {
@@ -677,6 +744,7 @@ body {
 
 .contact-title {
   padding: 120px;
+  // margin-top: 50px;
   padding-bottom: 140px;
   color: #FFF;
   text-align: center;
@@ -697,7 +765,7 @@ body {
 }
 
 .contact-title .size-large {
-  font-size: 120px;
+  font-size: 90px;
   font-weight: 400;
   opacity: 100%;
 }
@@ -707,6 +775,15 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
   text-shadow: 2px 2px 2px #000;
+}
+
+.contact-info {
+  border: 1px #d3d3d3;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  color: #000;
+  span {font-size: 25px;}
 }
 
 .contact-background{
@@ -730,6 +807,15 @@ body {
 /* ===================== contact ===================== */
 
 /* ====================== paty =========================*/
+@media (max-width: 767px) {
+  div.party-page-container {
+    padding-top: 0px;
+  }
+  // .party-title {
+  //   margin-top: 0px;
+  // }
+}
+
 
 .party-page-container {
   padding-left: 70px;
@@ -737,17 +823,19 @@ body {
   @media (max-width: 991px) {
     .party-title {
       margin-bottom: 30px;
+      padding-top: 0px;
     }
   }
   @media (max-width: 767px) {
     padding-left: 0px;
     .party-title {
-      margin-top: 30px;
+      padding: 30px 0px;
+      margin-top: 0px;
       margin-bottom: 30px;
     }
     .party-tabs ul li {
       padding: 3px;
-      font-size: 20px;
+      font-size: 30px;
     }
     .party-pills ul li {
       margin-top: 0;
@@ -759,7 +847,7 @@ body {
       -webkit-box-sizing: border-box;
       border-color: #d3d3d3;
       padding: 15px 30px;
-      font-size: 20px;
+      font-size: 25px;
       width: 50%;
       float: left;
     }
@@ -792,7 +880,6 @@ body {
 .bio-img {
   background-color: #CCC;
   width: 100%;
-  height: 333px;
   vertical-align: middle;
 }
 
@@ -860,8 +947,8 @@ body {
   border: solid 1px;
   border-top: 0px;
   border-color: #d3d3d3;
-  padding: 25px 30px;
-  font-size: 20px;
+  padding: 15px 30px;
+  font-size: 25px;
 }
 
 .party-pills ul li:hover {
@@ -999,17 +1086,38 @@ ul.nav.nav-pills {
 }
 
 .resp-nav {
-  padding-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
   position: absolute;
-  width: 100%;
+  width: 85px;
+  .navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 16px;
+  }
   nav {
+    border-radius: 4px;
     z-index: 1;
     button {
-      float: left;
+      margin: 10px 20px;
     }
   }
 
+  .navbar-nav {
+    margin: 0px 0px;
+  }
+
+  .container-fluid {
+    padding: 0px
+  }
+
+.container-fluid > .navbar-header, {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
   .navbar-header {
+    // margin-left: 50px;
     cursor: pointer;
     .button-section {
       margin-left: 15px;
@@ -1018,14 +1126,22 @@ ul.nav.nav-pills {
       border: 0px;
     }
   }
+
+nav .container-fluid ul li a {
+  font-size: 20px;
+}
+
   ul > li {
-    height: 40px;
+    padding: 15px 0px;
     text-align: center;
-    &:hover {
-      background-color: #ddd;
-      a > p {
-        margin-bottom: 0px;
-      }
-    }
+    // float: left;
+    // width: 100%;
+  }
+  ul > li:hover {
+    background-color: #ddd;
+    width: inherit;
+  }
+  ul > li > a {
+    padding: 0px;
   }
 }
