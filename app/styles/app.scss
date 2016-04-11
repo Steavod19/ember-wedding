@@ -752,10 +752,43 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*background-color: hsl(2, 57%, 40%);
-  background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-  repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-  repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);*/
+  p {
+    margin-top: 20px;
+    font-family: 'Josefin Slab', serif;
+    color: #000000;
+    font-size: 20px;
+  }
+}
+
+.registry-title {
+  font-size: 70px;
+  padding: 120px;
+  margin-top: 50px;
+  padding-bottom: 140px;
+  color: #FFF;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  p {
+    margin-top: 20px;
+    font-family: 'Josefin Slab', serif;
+    color: #000000;
+    font-size: 20px;
+  }
+}
+
+.registry-title span {
+  font-size: 70px;
+  margin: 0px;
+  opacity: 1;
+}
+
+.registry-title .size-large {
+  font-size: 90px;
+  font-weight: 400;
+  opacity: 100%;
 }
 
 .contact-title span {
